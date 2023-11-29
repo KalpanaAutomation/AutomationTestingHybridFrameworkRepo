@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="11" passed="7" failed="1" skipped="2">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-29T10:09:37 IST" name="Suite" finished-at="2023-11-29T10:10:36 IST" duration-ms="59103">
+    <groups>
+    </groups>
+    <test started-at="2023-11-29T10:09:37 IST" name="Test" finished-at="2023-11-29T10:10:36 IST" duration-ms="59103">
+      <class name="com.selenium.tests.LoginTest">
+        <test-method signature="loginWithValidCredentials(java.lang.String,java.lang.String)[pri:0, instance:com.selenium.tests.LoginTest@222545dc]" started-at="2023-11-29T10:10:13 IST" name="loginWithValidCredentials" data-provider="supplyTestData" finished-at="2023-11-29T10:10:13 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheet(String)" because "wb" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheet(String)" because "wb" is null
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:50)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:146)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:798)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheet(String)" because "wb" is null
+at com.selenium.utils.Utilities.readDataFromExcel(Utilities.java:72)
+at com.selenium.tests.LoginTest.supplyData(LoginTest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:77)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:46)
+... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:com.selenium.tests.LoginTest@222545dc]" started-at="2023-11-29T10:10:13 IST" name="startUp" finished-at="2023-11-29T10:10:18 IST" duration-ms="4601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="loginWithValidUsernameAndWrongPassword()[pri:2, instance:com.selenium.tests.LoginTest@222545dc]" started-at="2023-11-29T10:10:18 IST" name="loginWithValidUsernameAndWrongPassword" finished-at="2023-11-29T10:10:19 IST" duration-ms="904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidUsernameAndWrongPassword -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.selenium.tests.LoginTest@222545dc]" started-at="2023-11-29T10:10:19 IST" name="quitBrowser" finished-at="2023-11-29T10:10:19 IST" duration-ms="284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:com.selenium.tests.LoginTest@222545dc]" started-at="2023-11-29T10:10:19 IST" name="startUp" finished-at="2023-11-29T10:10:24 IST" duration-ms="5060" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="loginWithNoCredentials()[pri:4, instance:com.selenium.tests.LoginTest@222545dc]" started-at="2023-11-29T10:10:24 IST" name="loginWithNoCredentials" finished-at="2023-11-29T10:10:25 IST" duration-ms="740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithNoCredentials -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.selenium.tests.LoginTest@222545dc]" started-at="2023-11-29T10:10:25 IST" name="quitBrowser" finished-at="2023-11-29T10:10:25 IST" duration-ms="708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.selenium.tests.LoginTest -->
+      <class name="com.selenium.tests.RegisterTest">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:com.selenium.tests.RegisterTest@6dc17b83]" started-at="2023-11-29T10:09:38 IST" name="startUp" finished-at="2023-11-29T10:09:48 IST" duration-ms="10484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="registerAccountWithValidFields()[pri:1, instance:com.selenium.tests.RegisterTest@6dc17b83]" started-at="2023-11-29T10:09:48 IST" name="registerAccountWithValidFields" finished-at="2023-11-29T10:09:50 IST" duration-ms="2085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerAccountWithValidFields -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.selenium.tests.RegisterTest@6dc17b83]" started-at="2023-11-29T10:09:50 IST" name="quitBrowser" finished-at="2023-11-29T10:09:51 IST" duration-ms="368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:com.selenium.tests.RegisterTest@6dc17b83]" started-at="2023-11-29T10:09:51 IST" name="startUp" finished-at="2023-11-29T10:09:57 IST" duration-ms="6241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="registerAccountWithValidFieldsAndSubscribeAsYes()[pri:2, instance:com.selenium.tests.RegisterTest@6dc17b83]" started-at="2023-11-29T10:09:57 IST" name="registerAccountWithValidFieldsAndSubscribeAsYes" finished-at="2023-11-29T10:09:59 IST" duration-ms="2519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerAccountWithValidFieldsAndSubscribeAsYes -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.selenium.tests.RegisterTest@6dc17b83]" started-at="2023-11-29T10:09:59 IST" name="quitBrowser" finished-at="2023-11-29T10:10:00 IST" duration-ms="439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:com.selenium.tests.RegisterTest@6dc17b83]" started-at="2023-11-29T10:10:00 IST" name="startUp" finished-at="2023-11-29T10:10:04 IST" duration-ms="4620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="registerAccountWithoutAgreeingToPrivacyPolicy()[pri:3, instance:com.selenium.tests.RegisterTest@6dc17b83]" started-at="2023-11-29T10:10:04 IST" name="registerAccountWithoutAgreeingToPrivacyPolicy" finished-at="2023-11-29T10:10:06 IST" duration-ms="1463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerAccountWithoutAgreeingToPrivacyPolicy -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.selenium.tests.RegisterTest@6dc17b83]" started-at="2023-11-29T10:10:06 IST" name="quitBrowser" finished-at="2023-11-29T10:10:06 IST" duration-ms="278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:com.selenium.tests.RegisterTest@6dc17b83]" started-at="2023-11-29T10:10:06 IST" name="startUp" finished-at="2023-11-29T10:10:12 IST" duration-ms="5368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="registerAccountWithoutEnteringAnyFields()[pri:4, instance:com.selenium.tests.RegisterTest@6dc17b83]" started-at="2023-11-29T10:10:12 IST" name="registerAccountWithoutEnteringAnyFields" finished-at="2023-11-29T10:10:13 IST" duration-ms="1083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerAccountWithoutEnteringAnyFields -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.selenium.tests.RegisterTest@6dc17b83]" started-at="2023-11-29T10:10:13 IST" name="quitBrowser" finished-at="2023-11-29T10:10:13 IST" duration-ms="335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.selenium.tests.RegisterTest -->
+      <class name="com.selenium.tests.SearchTest">
+        <test-method is-config="true" signature="startUp()[pri:0, instance:com.selenium.tests.SearchTest@5158b42f]" started-at="2023-11-29T10:10:25 IST" name="startUp" finished-at="2023-11-29T10:10:29 IST" duration-ms="3957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="verifySearchWithValidProduct()[pri:1, instance:com.selenium.tests.SearchTest@5158b42f]" started-at="2023-11-29T10:10:29 IST" name="verifySearchWithValidProduct" finished-at="2023-11-29T10:10:30 IST" duration-ms="989" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchWithValidProduct -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.selenium.tests.SearchTest@5158b42f]" started-at="2023-11-29T10:10:30 IST" name="quitBrowser" finished-at="2023-11-29T10:10:31 IST" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="startUp()[pri:0, instance:com.selenium.tests.SearchTest@5158b42f]" started-at="2023-11-29T10:10:31 IST" name="startUp" finished-at="2023-11-29T10:10:35 IST" duration-ms="3988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method signature="verifySearchWithInvalidProduct()[pri:2, instance:com.selenium.tests.SearchTest@5158b42f]" started-at="2023-11-29T10:10:35 IST" name="verifySearchWithInvalidProduct" finished-at="2023-11-29T10:10:35 IST" duration-ms="772" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA['No product that matches the search criteria' message is not displayed expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 'No product that matches the search criteria' message is not displayed expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at com.selenium.pages.SearchPage.verifyNoProductDeatilMessage(SearchPage.java:29)
+at com.selenium.tests.SearchTest.verifySearchWithInvalidProduct(SearchTest.java:43)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchWithInvalidProduct -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.selenium.tests.SearchTest@5158b42f]" started-at="2023-11-29T10:10:36 IST" name="quitBrowser" finished-at="2023-11-29T10:10:36 IST" duration-ms="351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method signature="verifySearchWithoutAnyProduct()[pri:3, instance:com.selenium.tests.SearchTest@5158b42f]" started-at="2023-11-29T10:10:36 IST" name="verifySearchWithoutAnyProduct" finished-at="2023-11-29T10:10:36 IST" depends-on-methods="com.selenium.tests.SearchTest.verifySearchWithInvalidProduct" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method SearchTest.verifySearchWithoutAnyProduct()[pri:3, instance:com.selenium.tests.SearchTest@5158b42f] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method SearchTest.verifySearchWithoutAnyProduct()[pri:3, instance:com.selenium.tests.SearchTest@5158b42f] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchWithoutAnyProduct -->
+      </class> <!-- com.selenium.tests.SearchTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

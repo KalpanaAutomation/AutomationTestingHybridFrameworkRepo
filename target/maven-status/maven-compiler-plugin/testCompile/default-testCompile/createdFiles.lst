@@ -1,0 +1,5 @@
+com\selenium\base\Base.class
+com\selenium\tests\RegisterTest.class
+screenshot\TakeScreenshot.class
+com\selenium\tests\LoginTest.class
+com\selenium\tests\SearchTest.class
