@@ -10,6 +10,9 @@ import com.selenium.pages.SearchPage;
 
 public class SearchTest extends Base {
 
+	
+	//some comments added
+	
 	public WebDriver driver;
 	
 	SearchTest(){
